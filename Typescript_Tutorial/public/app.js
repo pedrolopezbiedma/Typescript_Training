@@ -1,10 +1,10 @@
 "use strict";
 // Classes
 class Invoice {
-    constructor(c, d, a) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
+    constructor(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
     }
     format() {
         return `${this.client} owes €${this.amount} for ${this.details}`;
@@ -15,7 +15,9 @@ const testInvoice2 = new Invoice('Luigi', 'work on the mario website', 200);
 let invoices = [];
 invoices.push(testInvoice);
 invoices.push(testInvoice2);
-console.log(invoices);
+invoices.forEach((invoice) => {
+    console.log(invoice.client, invoice.amount, invoice.format());
+});
 // HTML form
 const form = document.querySelector('.new-item-form');
 // Form inputs
