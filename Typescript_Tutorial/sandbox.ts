@@ -1,5 +1,8 @@
-const circ = (diameter: number) => {
-    return 5*Math.PI
-}
+let names = [ 'mario', 'luigi', 'yoshi'];
+names.push('bowser');
 
-console.log(circ(8))
+let ninja = {
+    name: 'mario',
+    belt: 'black',
+    age: 15
+};

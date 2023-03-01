@@ -1,4 +1,7 @@
-var circ = function (diameter) {
-    return 5 * Math.PI;
+var names = ['mario', 'luigi', 'yoshi'];
+names.push('bowser');
+var ninja = {
+    name: 'mario',
+    belt: 'black',
+    age: 15
 };
-console.log(circ(8));
