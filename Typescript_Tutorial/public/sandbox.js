@@ -1,2 +1,8 @@
 "use strict";
-console.log('hello2');
+let greet = () => {
+    console.log('Hello');
+};
+const add = (a, b = 10, c) => {
+    console.log(a + b);
+};
+add(5, 8);
