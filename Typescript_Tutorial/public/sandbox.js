@@ -1,11 +1,16 @@
 "use strict";
-let greet = () => {
-    console.log('Hello');
+// Without alias
+const logDetails = (payload) => {
+    console.log(payload);
 };
-const add = (a, b = 10, c) => {
-    console.log(a + b);
+//  With Alias
+const logDetails2 = (payload) => {
+    console.log(payload);
 };
-const multiply = (a, b = 10) => {
-    return a * b;
+//  With Better Alias
+const logDetails3 = (payload) => {
+    console.log(payload);
 };
-add(5, 8);
+logDetails({ name: 'Pedro', age: 10 });
+logDetails2({ name: 'Pedro2', age: 12 });
+logDetails3({ name: 'Pedro3', age: 13 });
