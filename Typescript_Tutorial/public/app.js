@@ -1,23 +1,19 @@
-const me = {
-    name: 'Pedro',
-    age: 35,
-    speak(text) {
-        console.log(text);
-    },
-    spend(amount) {
-        console.log('I have spent¡', amount);
-        return amount;
-    }
-};
 import { Invoice } from "./classes/Invoice.js";
-const testInvoice = new Invoice('Pedro', 'work on the mario website', 250);
-const testInvoice2 = new Invoice('Luigi', 'work on the mario website', 200);
-let invoices = [];
-invoices.push(testInvoice);
-invoices.push(testInvoice2);
-invoices.forEach((invoice) => {
-    console.log(invoice.client, invoice.amount, invoice.format());
-});
+import { Payment } from "./classes/Payment.js";
+// ########### Playground ############
+// let docOne: HasFormatter;
+// let docTwo: HasFormatter;
+// docOne = new Invoice('Yoshi', 'Web work', 250);
+// docTwo = new Payment('Mario', 'Plumbing work', 150);
+// const testInvoice = new Invoice('Pedro', 'work on the mario website', 250);
+// const testInvoice2 = new Invoice('Luigi', 'work on the mario website', 200);
+// let invoices: Invoice[] = [];
+// invoices.push(testInvoice);
+// invoices.push(testInvoice2);
+// invoices.forEach((invoice: Invoice) => {
+//     console.log(invoice.client, invoice.amount, invoice.format());
+// })
+// ########### Playground ############
 // HTML form
 const form = document.querySelector('.new-item-form');
 // Form inputs
@@ -28,5 +24,12 @@ const amount = document.querySelector('#amount');
 // Add event listener to the form
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+    let doc;
+    if (type.value === 'invoice') {
+        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+    }
+    else {
+        doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
+    }
+    console.log(doc, doc.format());
 });
