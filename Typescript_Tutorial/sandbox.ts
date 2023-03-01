@@ -22,3 +22,6 @@ let ninjaTwo: {
 };
 
 ninjaTwo = { name:'Pedro', age:5}
+
+// any type
+let anyVariable: any;
