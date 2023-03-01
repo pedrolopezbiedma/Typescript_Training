@@ -1,9 +1,5 @@
-const character = 'mario';
-console.log(character);
+const circ = (diameter: number) => {
+    return 5*Math.PI
+}
 
-const inputs = document.querySelectorAll('input');
-console.log(inputs);
-
-inputs.forEach(input => {
-    console.log('This is an input --> ', input);
-})
+console.log(circ(8))
