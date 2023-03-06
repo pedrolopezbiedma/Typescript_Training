@@ -1,20 +1,6 @@
 import { Invoice } from "./classes/Invoice.js";
 import { Payment } from "./classes/Payment.js";
 import { ListTemplate } from "./classes/listTemplate.js";
-// ########### Playground ############
-// let docOne: HasFormatter;
-// let docTwo: HasFormatter;
-// docOne = new Invoice('Yoshi', 'Web work', 250);
-// docTwo = new Payment('Mario', 'Plumbing work', 150);
-// const testInvoice = new Invoice('Pedro', 'work on the mario website', 250);
-// const testInvoice2 = new Invoice('Luigi', 'work on the mario website', 200);
-// let invoices: Invoice[] = [];
-// invoices.push(testInvoice);
-// invoices.push(testInvoice2);
-// invoices.forEach((invoice: Invoice) => {
-//     console.log(invoice.client, invoice.amount, invoice.format());
-// })
-// ########### Playground ############
 // HTML form
 const form = document.querySelector('.new-item-form');
 // Form inputs
