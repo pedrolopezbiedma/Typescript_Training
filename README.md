@@ -9,7 +9,7 @@ Project inside the repository is basically a Finance Logger to create Invoice / 
 Clone the project
 
 ```bash
-  git clone https://github.com/pedrolopezbiedma/Typescript_Training
+  git clone https://github.com/pedrolopezbiedma/Typescript_Training.git
 ```
 
 Go to the project directory
